@@ -17,4 +17,10 @@ ContextMap hides one fact at a set depth inside a document of a set length, asks
 - `generator/` builds test documents and cases
 - `eval/scoring.py` is the single correctness rule, shared by eval and backend
 - `db/schema.sql` is the Neon Postgres schema
-- `backend/` and `frontend/` come next
+- `backend/` is the FastAPI API (ingest results, heatmap, capability)
+- `frontend/` comes next
+
+## Run the API
+
+`pip install -r backend/requirements.txt`
+`uvicorn backend.app.main:app --reload`

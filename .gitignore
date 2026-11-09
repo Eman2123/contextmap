@@ -1,0 +1,6 @@
+.env
+data/docs/
+data/*.jsonl
+__pycache__/
+.venv/
+node_modules/
